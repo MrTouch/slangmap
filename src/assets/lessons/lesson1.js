@@ -104,8 +104,8 @@ export default {
         1: { // question 1
             "current" : false,
             "done" :false,
-            "options": ["nei","Grüezi,", "hett gern", "en Kafi Crème", "ich", "es Glas"],
-            "correctAnswer": ["Grüezi,", "ich", "hett gern", "en Kafi Crème"],
+            "options": ["nei","Grüezi,", "hett gern", "en Kafi Crème.", "ich", "es Glas"],
+            "correctAnswer": ["Grüezi,", "ich", "hett gern", "en Kafi Crème."],
             "selectedAnswer": {
                 0: false,
                 1: false,
@@ -116,8 +116,8 @@ export default {
         2: { // question 2
             "current" : false,
             "done" :false,
-            "options": ["e grossi Stange","Chan", "nöd", "ohni", "ich", "bitte", "ha?", "Merci", "e Schale"],
-            "correctAnswer": ["Chan", "ich", "bitte", "e grossi Stange", "ha?", "Merci"],
+            "options": ["e grossi Stange","Chan", "nöd", "ohni", "ich", "bitte", "ha?", "Merci.", "e Schale"],
+            "correctAnswer": ["Chan", "ich", "bitte", "e grossi Stange", "ha?", "Merci."],
             "selectedAnswer": {
                 0: false,
                 1: false,

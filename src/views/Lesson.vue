@@ -247,7 +247,7 @@ speaking part  of Switzerland as everyday language. However, german-speaking reg
                 <img  :class="{ visible: showMapLink }" class="scroll-icon open-icon open-icon-finish" alt="openicon" src="@/assets/icons/input-icon 1.svg" data-rate="0.9" data-direction="vertical" @click="openInputWindow('finish_container')" />   
               <div class ="scrollcontent-container" id="finish_container">
                     <div class="scrollcontent scrollinfo content_finish" >
-                        <img class="tophalfimg" alt="startimg" src="@/assets/images/poi/zb.jpg" />
+                        <img class="tophalfimg" alt="startimg" src="@/assets/images/poi/final.jpg" />
                         <div class="text-box">
                             <h3>dear visitor <br/> thank you for taking a look into the prototype of our bachelor project</h3>
                         We hope you enjoyed the experience and got a first impression of our concept. Unfortunately, there are no more exercises  so far. But you can keep scrolling to discover this first route in Zurich.

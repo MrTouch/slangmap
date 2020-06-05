@@ -162,8 +162,9 @@ div#circleContainer{
     display:block;
   }
   img{
-     margin-top:20px;
+     margin-top:40px;
      max-width: 200px;
+     max-height:160px;
 
   }
   .text{
@@ -174,6 +175,9 @@ div#circleContainer{
   }
   .submitbtn{
     margin-top:50px;
+  }
+  h1{
+    margin:10px 0;
   }
 }
 

@@ -249,8 +249,8 @@ speaking part  of Switzerland as everyday language. However, german-speaking reg
                     <div class="scrollcontent scrollinfo content_finish" >
                         <img class="tophalfimg" alt="startimg" src="@/assets/images/poi/zb.jpg" />
                         <div class="text-box">
-                            <h3>thanks taking a tour in the prototype of our bachelor project</h3>
-                                We hope that you enjoyed the experience. Unfortunatelly there are no more exercises or points of interests implemented. But you can kepp scrolling and enjoy the city of zurich a little bit more. The journey will continue to Grossmünster next and will end at the Sächsilüteplatz.
+                            <h3>dear visitor <br/> thank you for taking a look into the prototype of our bachelor project</h3>
+                        We hope you enjoyed the experience and got a first impression of our concept. Unfortunately, there are no more exercises  so far. But you can keep scrolling to discover this first route in Zurich.
                              
                         </div>
                     </div>

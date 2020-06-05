@@ -1,0 +1,2 @@
+# slangmap
+slangmap bachelor project

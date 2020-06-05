@@ -7,6 +7,13 @@
             <div id="progress" ref="progress" class="active"  :class="{ hide: isLanguageOverview || isVocabularyView || isSwissDetailView }">
                 <div class="container">
                     <div><h2>progress</h2></div>
+                                                                 
+                        <div class="settings-item highlight" @click="showLanguageOverview">
+                            <span class="settings-text">swiss-german</span> 
+                            <span class="settings-text passive">Your vocabulary and performance</span> 
+                                <img src="@/assets/icons/arrow-right.svg">
+                        </div>
+                        
                         <div class="settings-item highlight" @click="showError">
                             <span class="settings-text">french</span> 
                             <span class="settings-text passive">Your vocabulary and performance</span> 
@@ -18,12 +25,7 @@
                             <span class="settings-text passive">Your vocabulary and performance</span> 
                             <img src="@/assets/icons/arrow-right.svg">
                         </div>
-                                             
-                        <div class="settings-item highlight" @click="showLanguageOverview">
-                            <span class="settings-text">swiss-german</span> 
-                            <span class="settings-text passive">Your vocabulary and performance</span> 
-                                <img src="@/assets/icons/arrow-right.svg">
-                            </div>
+
                     </div>
                 </div>    
 

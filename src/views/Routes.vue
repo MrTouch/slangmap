@@ -35,7 +35,10 @@
                         </div>
                         <div class="settings-item highlight" @click="showSwitzerlandIncompleted">
                             <span class="settings-text">switzerland</span> 
-                            <span class="settings-text passive">4 routes</span> 
+                            
+                            <span class="settings-text passive" v-if="exercise[4]['done']">3 routes</span> 
+                            <span class="settings-text passive" v-if="!exercise[4]['done']">4 routes</span> 
+
                             <img class="pulldown2" src="@/assets/icons/arrow-right.svg">
                         </div>
                     </div>

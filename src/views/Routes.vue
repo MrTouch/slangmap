@@ -519,13 +519,11 @@ h2{
             cursor:pointer;
         }
         .settings-text{
-            font-family: 'Roboto Slab', serif;
-            font-size: 14px;
-            font-weight:bold;
-            &.passive{
                 font-family: 'Manrope', sans-serif;
-                font-size:12px;
+                font-size:14px;
                 font-weight: normal;
+            &.passive{
+                
                 position: absolute;
                 top: 36px;
                 left: 14px

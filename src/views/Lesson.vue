@@ -213,7 +213,7 @@ speaking part  of Switzerland as everyday language. However, german-speaking reg
                     </div>
                 </div>
 
-                <img v-if="exercise[4]['done']"  :class="{ visible: showMapLink }" class="scroll-icon open-icon open-icon-zahringer-grammatik" alt="openicon" src="@/assets/icons/exercise-icon.svg" data-rate="0.9" data-direction="vertical" @click="openInputWindow('zahringer_grammatik_container')" />
+                <img v-if="exercise[4]['done']"  :class="{ visible: showMapLink }" class="scroll-icon open-icon open-icon-zahringer-grammatik" alt="openicon" src="@/assets/icons/exercise-icon-done.svg" data-rate="0.9" data-direction="vertical" @click="openInputWindow('zahringer_grammatik_container')" />
                 <img v-if="!exercise[4]['done']"  :class="{ visible: showMapLink }" class="scroll-icon open-icon open-icon-zahringer-grammatik" alt="openicon" src="@/assets/icons/exercise-icon.svg" data-rate="0.9" data-direction="vertical" @click="openInputWindow('zahringer_grammatik_container')" />
                 <div class ="scrollcontent-container" id="zahringer_grammatik_container">
                     <div class="scrollcontent scrollinfo content_zahringer_grammatik" >
@@ -242,6 +242,16 @@ speaking part  of Switzerland as everyday language. However, german-speaking reg
                 </div>
             </div>
 
+                <img  :class="{ visible: showMapLink }" class="scroll-icon open-icon open-icon-finish" alt="openicon" src="@/assets/icons/input-icon 1.svg" data-rate="0.9" data-direction="vertical" @click="openInputWindow('finish_container')" />   
+               <div class ="scrollcontent-container" id="finish_container">
+                    <div class="scrollcontent scrollinfo content_finish" >
+                        <img class="tophalfimg" alt="startimg" src="@/assets/images/exercises/zahringer.png" />
+                        <div class="text-box">
+                            <h3>thanks taking a tour in the prototype of our bachelor project</h3>
+                                We hope that you enjoyed the experience. Unfortunatelly there are no more exercises or points of interests implemented. But you can kepp scrolling and enjoy the city of zurich a little bit more. The journey will continue to Grossmünster next and will end at the Sächsilüteplatz.
+                            </div>
+                    </div>
+                </div>
             <!-- ************************************ EXERCISE QUESTIONS ************************* -->
             <Questions  v-bind:class="{ active: activeExercise }" :exercise="exercise" :currentExercise="currentExercise" @onclose="closeExercise" @oncloseInput="closeInputWindow" />
             
@@ -676,11 +686,15 @@ p {
     &.open-icon-zahringer-grammatik{
         top:10050px;
     }
+    &.open-icon-finish{
+        top:10550px;
+    }
 }
 
 .intext{
     display:inline;
 }
+
 
 .scrollcontent-container{
     position: fixed;
@@ -819,6 +833,10 @@ h3{
 
 .submitbtn{
    
+}
+.content_finish{
+    position: fixed;
+    top:0;
 }
 
 </style>

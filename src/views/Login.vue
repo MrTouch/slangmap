@@ -380,4 +380,7 @@ export default {
 ul{
   list-style: none;
 }
+.clickable{
+  cursor: pointer;
+}
 </style>

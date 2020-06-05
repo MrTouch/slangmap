@@ -104,7 +104,7 @@
 
                 <div class="question_container" id="e2q2" v-bind:class="{ active: exercise[2][2]['current'] }">
                     <h3>Select the word which fit the following image.</h3>
-                    <div class="questionImage"><img id="l1e2q2_1" alt="e ma" src="@/assets/images/exercises/womanlimmat.png" class="questionimage" /></div>
+                    <div class="questionImage"><img id="l1e2q2_1" alt="e ma" src="@/assets/images/exercises/limmat.jpg" class="questionimage" /></div>
                     <div class="imageAnswerQuestionContainer">
                         <div class="option" v-on:click="selectAnswer($event,2,2, 0)"  v-bind:class="{active:exercise[2][2]['selectedAnswer'][0]}">
                             Er postet es Wasser.
@@ -155,8 +155,8 @@
                 </div>
                 <div class="question_container" id="e3q1" v-bind:class="{ active: exercise[3][1]['current'] }">
                     <h3>Look at the following pictures and assign them to the correct words</h3>
-                    <div class="questionImage"><img id="l1e3q1_0" alt="e ma" src="@/assets/images/exercises/book.jpg" class="questionimage" /></div>
-                    <div class="imageAnswerQuestionContainer">
+                    <div class="questionImage"><img id="l1e3q1_0" alt="e ma" src="@/assets/images/exercises/book.jpg" class="questionimage margin-top" /></div>
+                    <div class="imageAnswerQuestionContainer margin-top">
                         <div class="option" v-on:click="selectAnswer($event,3,1, 0)"  v-bind:class="{active:exercise[3][1]['selectedAnswer'][0]}">
                             Es Buech
                         </div>
@@ -171,8 +171,8 @@
 
                 <div class="question_container" id="e3q2" v-bind:class="{ active: exercise[3][2]['current'] }">
                     <h3>Lok at the following pictures and assign them to the correct words</h3>
-                    <div class="questionImage"><img id="l1e3q2_0" alt="e ma" src="@/assets/images/exercises/desk.png" class="questionimage" /></div>
-                    <div class="imageAnswerQuestionContainer">
+                    <div class="questionImage"><img id="l1e3q2_0" alt="e ma" src="@/assets/images/exercises/desk.jpg" class="questionimage margin-top" /></div>
+                    <div class="imageAnswerQuestionContainer margin-top">
                         <div class="option" v-on:click="selectAnswer($event,3,2, 0)"  v-bind:class="{active:exercise[3][2]['selectedAnswer'][0]}">
                             En Studänt
                         </div>
@@ -187,8 +187,8 @@
 
                 <div class="question_container" id="e3q3" v-bind:class="{ active: exercise[3][3]['current'] }">
                     <h3>Look at the following pictures and assign them to the correct words</h3>
-                    <div class="questionImage"><img id="l1e3q3_0" alt="e ma" src="@/assets/images/exercises/nzz.png" class="questionimage" /></div>
-                    <div class="imageAnswerQuestionContainer">
+                    <div class="questionImage"><img id="l1e3q3_0" alt="e ma" src="@/assets/images/exercises/nzz.jpg" class="questionimage margin-top" /></div>
+                    <div class="imageAnswerQuestionContainer" margin-top>
                         <div class="option" v-on:click="selectAnswer($event,3,3, 0)"  v-bind:class="{active:exercise[3][3]['selectedAnswer'][0]}">
                             E Zitig
                         </div>
@@ -576,8 +576,8 @@ export default {
             for (let [key, value] of Object.entries(this.exercise[3][2]["selectedAnswer"])) {
                 console.log(`${key}: ${value}`);
                 if(this.exercise[3][2]["selectedAnswer"][key] == true){
-                    this.playAudioFile("correct.wav")
                     if(key == this.correctAnswers["l1e3q2"]){
+                        this.playAudioFile("correct.wav")
                         console.log("correct answer to question.");
                         this.checkedElement.classList.add("correct");
                         correct = true;
@@ -925,12 +925,15 @@ h3{
     }
 
 }
-
+.margin-top{
+    margin-top:20px;
+}
 .imageAnswerQuestionContainer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+ 
     .option{
         
         border:2px solid #87FFF2;

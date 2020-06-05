@@ -205,7 +205,7 @@ p{
 }
 .circle:before {
   content: ' \25CF';
-  font-size: 33px;
+  font-size: 21px;
 }
 span.circle{
     color: #e0e0e0;
